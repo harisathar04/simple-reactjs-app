@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Dependency Installation') {
             steps {
-                sh '/usr/local/bin/npm install'
+                sh 'npm install'
             }
         }
         stage('Build Docker Image') {
