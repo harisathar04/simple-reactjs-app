@@ -3,12 +3,12 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/aditya-sridhar/simple-reactjs-app.git'
+                git 'https://github.com/harisathar04/simple-reactjs-app.git'
             }
         }
         stage('Dependency Installation') {
             steps {
-                sh 'npm install' 
+                sh '/usr/local/bin/npm install'
             }
         }
         stage('Build Docker Image') {
